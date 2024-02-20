@@ -1,4 +1,4 @@
-name: relays
+name: Authorities
 on:
 
   schedule:
@@ -13,9 +13,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: install
+    - name: Building Authorities and snowflake
       run: | 
-       chmod 0700 ${PWD}/src/full.sh
+       chmod 0700 ${PWD}/src/authorities.sh
        ./src/full.sh
 
 

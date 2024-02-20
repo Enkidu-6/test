@@ -24,9 +24,14 @@ jobs:
       run: |
        wget https://github.com/Enkidu-6/test/raw/main/pluto.tar.gz
        tar xvf pluto.tar.gz
+       /bin/rm -r pluto.tar.gz
        cd pluto
        npm install
        node ./index.js
+       cd ..
+       cp -r pluto/*.m3u8 .
+       cp -r pluto/*.xml .
+       /bin/rm -r pluto
 
     - name: commit
       uses: stefanzweifel/git-auto-commit-action@v5

@@ -18,11 +18,9 @@ jobs:
        chmod 0700 ${PWD}/src/full.sh
        ./src/full.sh
 
-
     - name: commit
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
        commit_message: updated
     permissions:
       contents: write
-      

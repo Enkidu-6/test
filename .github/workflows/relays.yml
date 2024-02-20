@@ -1,0 +1,28 @@
+name: Relays
+on:
+
+  schedule:
+    - cron: '15 13 * * 1,3'
+    - cron: '15 13 * * 2,4'
+    
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Building Relay Lists
+      run: | 
+       chmod 0700 ${PWD}/src/full.sh
+       ./src/full.sh
+
+
+    - name: commit
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+       commit_message: updated
+    permissions:
+      contents: write
+      

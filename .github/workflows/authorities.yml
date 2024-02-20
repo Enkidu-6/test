@@ -16,7 +16,7 @@ jobs:
     - name: Building Authorities and snowflake
       run: | 
        chmod 0700 ${PWD}/src/authorities.sh
-       ./src/full.sh
+       ./src/authorities.sh
 
 
     - name: commit

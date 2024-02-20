@@ -22,8 +22,8 @@ jobs:
 
     - name: npm install, build, and run
       run: |
-       mkdir pluto
-       cp -r ./pluto/* pluto/
+       wget https://github.com/Enkidu-6/test/raw/main/pluto.tar.gz
+       tar xvf pluto.tar.gz
        cd pluto
        npm install
        node ./index.js

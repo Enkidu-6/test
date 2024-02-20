@@ -1,4 +1,4 @@
-name: Relays
+name: Relays CI
 on:
 
   schedule:

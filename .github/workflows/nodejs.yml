@@ -1,4 +1,4 @@
-name: nodjs
+name: Pluto CI
 on:
 
   workflow_dispatch:

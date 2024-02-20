@@ -2,8 +2,7 @@ name: Authorities
 on:
 
   schedule:
-    - cron: '15 13 * * 1,3'
-    - cron: '15 13 * * 2,4'
+    - cron: '0 0 * * *'
     
   workflow_dispatch:
 

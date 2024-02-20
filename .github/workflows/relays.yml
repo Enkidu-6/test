@@ -14,7 +14,9 @@ jobs:
     - uses: actions/checkout@v3
 
     - name: install
-      run: ./src/full.sh
+      run: | 
+       chmod 0700 ${PWD}/src/full.sh
+       ./src/full.sh
 
 
     - name: commit

@@ -27,8 +27,6 @@ jobs:
        npm install
        node ./index.js
 
-    - name: commit
-    - uses: stefanzweifel/git-auto-commit-action@v5
      
         
 

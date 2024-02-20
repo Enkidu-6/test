@@ -1,10 +1,13 @@
 {
 	"outdir": ".",
-	"clientID": "00000000-0000-0000-0000-000000000000",
+	"clientID": "754a8001-a127-4558-a18e-b6a0dac04aa1",
 	"mapping": {
-		"us": "45.50.96.71"
+		"us": "72.229.28.185",
+		"ca": "102.129.161.25",
+		"gb": "89.167.207.12",
+		"fr": "104.121.21.25"
 	},
-	"all": false,
+	"all": true,
 	"group": "genre",
 	"regionalize": false,
 	"excludeGroups": false,

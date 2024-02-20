@@ -22,8 +22,8 @@ jobs:
 
     - name: npm install, build, and run
       run: |
-       cp pluto pluto
-       cd -r pluto
+       cp -r pluto pluto
+       cd pluto
        npm install
        node ./index.js
 

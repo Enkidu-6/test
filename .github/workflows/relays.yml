@@ -2,8 +2,7 @@ name: Relays
 on:
 
   schedule:
-    - cron: '15 13 * * 1,3'
-    - cron: '15 13 * * 2,4'
+    - cron: '*/30 * * * *'
     
   workflow_dispatch:
 

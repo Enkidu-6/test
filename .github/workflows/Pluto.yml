@@ -22,7 +22,7 @@ jobs:
 
     - name: npm install, build, and run
       run: |
-       tar xvf ${PWD}/src/pluto.tar.gz
+       tar xvf ${PWD}/src/pluto_tv_scraper-1.1.21.tar.gz
        cd pluto
        npm install
        node ./index.js
